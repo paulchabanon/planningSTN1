@@ -55,3 +55,8 @@ docs/_build/
 
 # PyBuilder
 target/
+
+# Planning STN1
+*.dat
+config.py
+test.py
