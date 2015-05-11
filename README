@@ -1,0 +1,31 @@
+python 2.7.x (de préférence 2.7.9 pour avoir la commande pip)
+Surtout ne pas oublier d'ajouter les commandes au path lors de l'install.
+
+
+Une fois python installé, il nous faut certains modules:
+
+--- google api
+pip install --upgrade google-api-python-client
+
+pip install --upgrade python-gflags
+
+
+
+--- openpyxl
+pip install --upgrade openpyxl
+
+
+ou installer à partir des sources:
+(à télécharger sur internet)
+
+python setup.py install
+
+
+
+--- configuration
+editez le fichier config.py
+
+
+
+--- lancez le script 
+python planning.py
