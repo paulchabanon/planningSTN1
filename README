@@ -20,11 +20,16 @@ ou installer à partir des sources:
 
 python setup.py install
 
-
+--- votre compte google
+créer un calendrier avec le nom de votre choix sur votre compte google.
+(pas d'espaces dans le nom)
 
 --- configuration
-editez le fichier config.py
-
+renomez config.py.inc en config.py
+éditez le fichier config.py
+Champs à mofiier obligatoirement :
+  self.trigram = 'PCH'  =>  Trigram de votre colonne dans le planning
+  self.calendarName = 'Shifts'  =>  Nom de votre calendrier sur votre compte google
 
 
 --- lancez le script 

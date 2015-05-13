@@ -5,7 +5,7 @@ class PlanningConfig:
     self.trigram = 'PCH'
     # number of days to process (0 is infinite and goes to end of excel file)
     self.parse_days = 0
-    self.max_date = '2015-09-23' # fin heure d'été
+    self.max_date = '2050-01-01'
 
 
     ### Param excel file
