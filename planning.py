@@ -37,7 +37,7 @@ if user_col < 0:
   print 'could not find trigram ', config.trigram
   sys.exit(1)
 
-print 'found user'
+print 'found user',"\n"
 
 #go for each day of year
 count = 0
@@ -71,12 +71,14 @@ for r in range(1,380):
   #if shift name is not known in config file
   if shift in config.day_type.viewkeys():
     print str_day,config.day_type[shift]['start'],config.day_type[shift]['end'],'count',count
-    shifts.setShift(shift, str_day)
+    if shifts.setShift(shift, str_day):
+      time.sleep(1)
+    
   else:
     print str_day,shift,'count',count
     shifts.rmShift(str_day)
+    time.sleep(1)
   
-  time.sleep(1)
   print "\n"
   
 print '### END ###'

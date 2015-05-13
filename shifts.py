@@ -14,9 +14,9 @@ class Shifts:
       if e['organizer']['displayName'] == self.config.calendarName:
       
         # do we have to modify it ?
-        if e['start']['dateTime'] == time_start and e['end']['dateTime'] == time_end:
+        if e['summary'] == name:
           print 'no change'
-          return
+          return False
         
         print 'old',e['start']['dateTime']
         print 'new',time_start
@@ -41,6 +41,7 @@ class Shifts:
       options['color'] = self.config.day_type[name]['color']
     
     self.gcal.addEvent(name, edate, time_start, time_end, options)
+    return True
   
   def rmShift(self, edate):   
     # search if shift already set for this day
