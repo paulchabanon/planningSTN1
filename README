@@ -14,11 +14,10 @@ pip install --upgrade python-gflags
 --- openpyxl
 pip install --upgrade openpyxl
 
-
-ou installer à partir des sources:
-(à télécharger sur internet)
-
+ou installer à partir des sources (à télécharger sur internet)
 python setup.py install
+
+
 
 --- votre compte google
 créer un calendrier avec le nom de votre choix sur votre compte google.
@@ -27,7 +26,7 @@ créer un calendrier avec le nom de votre choix sur votre compte google.
 --- configuration
 renomez config.py.inc en config.py
 éditez le fichier config.py
-Champs à mofiier obligatoirement :
+Champs à modifier obligatoirement :
   self.trigram = 'PCH'  =>  Trigram de votre colonne dans le planning
   self.calendarName = 'Shifts'  =>  Nom de votre calendrier sur votre compte google
 
